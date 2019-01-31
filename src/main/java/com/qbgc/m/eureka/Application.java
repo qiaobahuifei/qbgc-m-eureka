@@ -2,12 +2,14 @@ package com.qbgc.m.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
-public class QbgcMEurekaApplication {
+@EnableEurekaServer
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QbgcMEurekaApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
